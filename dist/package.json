@@ -1,6 +1,6 @@
 {
   "name": "krc-mongodb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "krc - mongo database",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "database"
   ],
   "author": "Luong Phung <luonguit@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "peerDependencies": {
     "mongoose": "^5.9.3"
   },
