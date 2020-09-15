@@ -1,0 +1,38 @@
+{
+  "name": "krc-mongodb",
+  "version": "1.0.1",
+  "description": "krc - mongo database",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "format": "prettier --config .prettierrc --write src/**/*",
+    "build": "npm run clean && tsc && gulp bundle"
+  },
+  "keywords": [
+    "@krc",
+    "mongo",
+    "mongodb",
+    "database"
+  ],
+  "author": "Luong Phung <luonguit@gmail.com>",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "mongoose": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.3",
+    "@types/mongoose": "^5.7.3",
+    "@types/node": "^13.9.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "mongoose": "^5.9.3",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  }
+}
