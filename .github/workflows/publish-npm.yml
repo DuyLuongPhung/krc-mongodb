@@ -22,9 +22,9 @@ jobs:
       with:
         node-version: 12.x
         registry-url: https://registry.npmjs.org
+    - run: npm version ${{ github.event.release.tag_name }} --force
     - run: npm ci
     - run: npm install
-    - run: npm version ${{ github.event.release.tag_name }}
     - run: npm run build
     - run: npm publish --tag ${{ github.event.release.release_name }}
       env: 
