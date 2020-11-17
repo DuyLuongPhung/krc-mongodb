@@ -1,4 +1,4 @@
-# krc-mongodb
+# octopus-mongo
 
 ## Features
 
@@ -17,10 +17,10 @@
 npm install mongoose@^5.9.3
 ```
 
-- Install krc-mongodb
+- Install octopus-mongo
 
 ```
-npm install krc-mongodb
+npm install octopus-mongo
 ```
 
 ## How it work
@@ -30,7 +30,7 @@ npm install krc-mongodb
 - using:
 
 ```
-import { connectMongoDb } from "krc-mongodb";
+import { connectMongoDb } from "octopus-mongo";
 
 await connectMongoDb();
 ```
@@ -87,7 +87,7 @@ const Category = model("categories", CategorySchema);
 - Define entity interface:
 
 ```
-import { IDocument } from "krc-mongodb";
+import { IDocument } from "octopus-mongo";
 
 interface ICategory extends IDocument<string> {
   categoryId: string;
@@ -105,7 +105,7 @@ interface ICategory extends IDocument<string> {
 - Declare repository into service to query:
 
 ```
-import { Repository } from "krc-mongodb";
+import { Repository } from "octopus-mongo";
 
 _categoryRepository = Repository<string, ICategory>(Category);
 
