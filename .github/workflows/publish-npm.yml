@@ -25,6 +25,7 @@ jobs:
     - run: npm ci
     - run: npm install
     - run: npm run build
+    - run: npm version prerelease --preid ${{ github.event.release.tag_name }}
     - run: npm publish --tag ${{ github.event.release.tag_name }}
       env: 
         NODE_AUTH_TOKEN: ${{secrets.KNPM_TOKEN}}
