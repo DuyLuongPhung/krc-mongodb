@@ -4,10 +4,8 @@
 name: Build & publish to NPM
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  release:
+      types: [published]
 
 jobs:
   build:
@@ -15,18 +13,18 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 12.x
+        registry-url: https://registry.npmjs.org
+    - run: npm ci
+    - run: npm install
+    - run: npm run build
+    - run: npm publish --tag ${{ github.event.release.tag_name }}
+      env: 
         NODE_AUTH_TOKEN: ${{secrets.KNPM_TOKEN}}
-    - name: build & push
-      run: | 
-        npm install
-        npm run build
-        npm publish
-
