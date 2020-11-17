@@ -1,5 +1,22 @@
 # octopus-mongo
 
+
+[![NPM version][npm-image]][npm-url] [![npm download][download-image]][download-url]
+
+[npm-image]: http://img.shields.io/npm/v/octopus-mongo.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/octopus-mongo
+[download-image]: https://img.shields.io/npm/dm/octopus-mongo.svg?style=flat-square
+[download-url]: https://npmjs.org/package/octopus-mongo
+
+## Install
+
+[![octopus-mongo](https://nodei.co/npm/octopus-mongo.png)](https://npmjs.org/package/octopus-mongo)
+
+```
+npm install --save octopus-mongo
+```
+
+
 ## Features
 
 ```
