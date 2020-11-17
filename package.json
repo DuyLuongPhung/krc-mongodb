@@ -1,6 +1,6 @@
 {
-  "name": "krc-mongodb",
-  "version": "1.0.3",
+  "name": "knode-mongo",
+  "version": "1.0.0",
   "description": "krc - mongo database",
   "main": "index.js",
   "scripts": {
