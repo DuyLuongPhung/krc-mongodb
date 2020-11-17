@@ -1,7 +1,7 @@
 {
-  "name": "knode-mongo",
+  "name": "octopusjs-mongo",
   "version": "1.0.0",
-  "description": "krc - mongo database",
+  "description": "octopusjs mongodb connect",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist/*",
