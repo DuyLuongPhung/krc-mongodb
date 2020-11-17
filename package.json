@@ -1,5 +1,5 @@
 {
-  "name": "octopusjs-mongo",
+  "name": "octopus-mongo",
   "version": "1.0.0",
   "description": "octopusjs mongodb connect",
   "main": "index.js",
