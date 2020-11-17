@@ -24,6 +24,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         NODE_AUTH_TOKEN: ${{secrets.KNPM_TOKEN}}
-    - run: npm install
-    - run: npm run build
-    — run: npm publish
+    - name: build & push
+      run: | 
+        npm install
+        npm run build
+        npm publish
+
